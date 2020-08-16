@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #navbar {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: grey;
+            margin-bottom: 15px;
+            /* position: fixed;
+            width: 100vw; */
+        }
+
+        ul#navbar li {
+            float: left;
+            padding: 25px 30px;
+        }
+
+        ul#navbar li a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+
+        ul#navbar li a:hover {
+            display: block;
+            background-color: white;
+            color: black;
+        }
+
+        .banner {
+            background-image: url("../images/bg-practical-8.jpg");
+            background-size: cover;
+            color: white;
+            width: 100%;
+            height: 100vh;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 72px;
+            margin-top: 15px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .sec1 {
+            margin-bottom: 70px;
+        }
+
+        .sec1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .sec1 h1 {
+            /* margin: 25px 0px; */
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        .circle img {
+            position: relative;
+            float: left;
+            margin: 15px 5% 20px 5%;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .sec2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+
+        }
+
+        .sec2 h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .content {
+            text-align: center;
+            background-color: gray;
+            color: white;
+            width: 50%;
+            height: 510px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 24px;
+            text-align: justify;
+            padding: 0px 15px 15px 15px;
+        }
+
+
+        .article {
+            background-color: darkorange;
+            display: flex;
+            width: 48%;
+            height: 160px;
+            justify-content: center;
+            /* align-items: center; */
+            color: black;
+            font-weight: 600;
+            ;
+            margin-bottom: 15px;
+            /* float: ; */
+        }
+
+        .article p {
+            margin-top: 10px;
+        }
+
+        .art1 {
+            background-image: url(../images/p1.jpg);
+        }
+
+        .art2 {
+            background-image: url(../images/p2.jpeg);
+        }
+
+        .art3 {
+            background-image: url(../images/p3.jpg);
+        }
+
+        #sec3 {
+            margin-bottom: 20px;
+            /* border: solid 2px red; */
+        }
+        #sec3 h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #sec3::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .cards {
+            display: block;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 20px;
+            /* border: solid black 2px; */
+        }
+        .cards::after {
+            display: block;
+            content: ' ';
+            clear: both;
+        }
+
+         .box {
+            width: 20%;
+            float: left;
+            margin: 20px 15px;
+            background-color: grey;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        }
+        .box::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+
+        .box h3 {
+            color: black;
+            text-align: center;
+            font-size: 32px;
+        }
+         .box p{
+            font-size: 18px;
+            text-align: justify;
+            color: white;
+        }
+
+        .box img {
+            position: relative;
+            display: block;
+            width: 90%;
+            height: 180px;
+            margin: 10px;
+            border-radius: 8px;
+
+        }
+
+        .box a {
+            display: block;
+            font-size: 24px;
+            border: 2px solid red;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .box a:hover {
+            background-color: blue;
+            border: 2px solid blue;
+        }
+        #contact {
+            background-color: pink;
+            color: black;
+            height: 80px;
+            /* border: solid black 2px; */
+        }
+        #contact p{
+            font-size: 32px;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul id="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#sec2">ABOUT US</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#sec3">TECHNOLOGIES</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <p>PRACTICAL 8</p>
+        </div>
+        <div class="sec1">
+            <h1>Team Members</h1>
+
+            <div class="circle"><img src="../images/1.png" alt=""></div>
+            <div class="circle"><img src="../images/2.png" alt=""></div>
+            <div class="circle"><img src="../images/3.png" alt=""></div>
+            <div class="circle"><img src="../images/9.png" alt=""></div>
+        </div>
+        <div class="sec2" id="sec2">
+            <h1>About Us</h1>
+            <div id="left-part">
+                <div class="content">
+                    <h2>About Project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente iste doloribus dolorum
+                        ut, quisquam repudiandae. Fugiat voluptatibus ut qui maiores earum ipsa est adipisci, amet
+                        repellat perspiciatis corrupti, nulla eos ea architecto itaque, excepturi praesentium veniam
+                        litia laboriosam necessitatibus a dicta. Delectus modi, quibusdam Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Tenetur tempore minus rerum, iste alias numquam maxime eaque
+                        quibusdam suscipit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis et, dolorem ex omnis,                        
+                    </p>
+                </div>
+            </div>
+            <div id="right-part">
+                <div class="article art1">
+                    <p>Project 1</p>
+                </div>
+                <div class="article art2">
+                    <p>Project 2</p>
+                </div>
+                <div class="article art3">
+                    <p>Project 3</p>
+                </div>
+            </div>
+        </div>
+        <div id="sec3">
+            <h1>Technologies Used</h1>
+            <div class="cards">
+            <div class="box">
+                <img src="../images/introHTML.png" alt="html image" class="image">
+                <h3>Introduction to HTML</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis adipisci voluptatibus
+                    dignissimos
+                    eveniet assumenda necessitatibus id corrupti ducimus quas?
+                </p>
+                <a href="../HTML/intro-html.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="../images/introCSS.png" alt="css image" class="image">
+                <h3>Introduction to CSS</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis adipisci voluptatibus
+                    dignissimos
+                    eveniet assumenda necessitatibus id corrupti ducimus quas?
+                </p>
+                <a href="../HTML/intro-css.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="../images/intro-js.jpg" alt="JS image" class="image">
+                <h3>Introduction to JavaScript</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis adipisci voluptatibus
+                    dignissimos
+                    eveniet assumenda necessitatibus id corrupti ducimus quas?
+                </p>
+                <a href="../HTML/intro-js.html">Read More</a>
+            </div>
+            <div class="box">
+                <img src="../images/intro-bootstrap.jpg" alt="bootstrap image" class="image">
+                <h3>Introduction to Bootstrap</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consr adipcing elit. Ad reiciendis adipisci voluptus fhJHhfihiJDLiof
+             
+       dignissimos
+                    eveniet assumenda necessitid corrupti ducimus quashululuuuuul
+                </p>
+                <a href="../HTML/intro-bootstrap.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <p>Contact Us </p>
+    </div>
+    </div>
+</body>
+
+</html>
+
+    
+
