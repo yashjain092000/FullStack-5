@@ -1,83 +1,63 @@
-* {
-    padding: 0;
-    margin: 0;box-sizing: border-box;  
-}
-body {
-    min-width: 100%;
-    background-color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.wrapper {
-    width: 600px;
-    background-color: #fff;
+tr,td,th {
+    border-bottom: 2px solid rgb(156, 149, 149);
+    /* border-spacing: 0; */
     padding: 10px;
-    margin: 20px auto;
-}
-
-.custom-table {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-
-} 
-.basic {
-    background-color: #c1dcb7;
-}
-.plus {
-    background-color: #bad6c8;
-}
-.delux {
-    background-color: #bbd3dc;
-}
-.pro {
-    background-color: #d5e4bc;
-}
-
-.custom-table td, .custom-table th {
-    width: 150px;
-    padding: 8px 5px;
-    text-align: center;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-}
-.custom-table th {
-    height: 70px;
-    color: #64548f;
-    font-size: 28px;
-
-}
-span {
-    font-size: 28px;
-    color:#64548f ;
-    margin-right:10px;
-}
-tbody tr:nth-child(odd), tfoot tr:nth-child(even) {
-    background-color: #edf3e2;
-} 
-
-tfoot tr {
-    line-height: 70px;
-}
-
-a {
-    text-decoration: none;
-    background-color: #64548f;
-    padding:10px 25px;
-    color:white;
-    border-radius: 10px;
-    font-size: 18px;
-    vertical-align: middle;
-}
-a:hover {
-    color: red;
-    background-color: yellow;
-}
-h2{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-tbody tr:first-child {
     font-size: 20px;
-    color: green;
+}
+
+
+table {
+    border: 2px solid black;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+
+}
+tr {
+    border-left: 2px solid black;
+}
+th {
+    font-weight: bold;
+    
+    font-size: 24px;
+}
+#topic {
+    text-align: center;
+    background-color: rgb(15, 15, 49);
+    color: white;
+    font-size: 30px;
+}
+.pending {
+    color: red;
+}
+.delivered {
+    color:green
+}
+.bin {
+    margin-left: 15px;
+    display: inline-block;
+}
+tr:hover{
+    background-color:#f6f6f6;
+}
+td a {
+    text-decoration: none;
+    color: black;
+}
+td a:hover {
+    text-decoration: none;
+    color: blue;;
+}
+
+.delete:hover {
+    color: red;
+}
+.edit:hover {
+    color: blue;
 }
